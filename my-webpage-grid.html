@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple grid web page</title>
+    <link rel="stylesheet" href="grid/simple-grid.css">
+    <style>
+        .container {
+            background-color: #E5CCC8;
+        }
+
+        h1{
+            color: #522632;
+            font-size: 1.8em;
+            margin: 0;
+        }
+
+        h2{
+            color: #6F3B48;
+            margin-left: 20px;
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+
+        h3{
+            margin: 0;
+            font-size: 1em;
+        }
+        
+        p{
+            font-size: 0.9em;
+            margin: 0;
+            padding-bottom: 2px;
+        }
+
+        .header {
+            display: flex;
+            padding-top: 30px;
+        }
+
+        .header h1 {
+            font-size: 1.8rem;
+        }
+
+        .header .pic img {
+            /* max-width: 130px; */
+            width: 60%;
+        }
+
+        .header.name {
+            margin-right: 30px;
+            width: 100%;
+        }
+
+        .india img {
+            width: 100%;
+        }
+
+        .india p {
+            width: 100%;
+            margin: 0;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .city .text {
+            width: 100%;
+        }
+
+        .city .pic img {
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        .castle .text {
+            width: 100%;
+        }
+
+        .castle .pic img {
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        .iziko .text {
+            width: 100%;
+        }
+
+        .iziko .pic img {
+            margin-top: 30px;
+            width: 100%;
+        }
+
+        .HistoricalPlaces .col-6 {
+            width: 46%;
+        }
+
+        .HistoricalPlaces p{
+            padding-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row header">
+            <div class="col-6-sm name">
+                <h1>NZWAKIE MGXAJI</h1>
+            </div>
+
+            <div class="col-6-sm pic">
+                <img src="../basic_website/Images/TableMountain.jpg" alt="Table Mountain">
+            </div>
+        </div>
+        <div class="row india">
+            <h2>Which city</h2>
+            <div class="col-3">
+                <img src="../basic_website/Images/India.jpg" alt="India">
+            </div>
+            <div class="col-9">
+                <h3 class=>India</h3>
+                <p>India is a beautiful place with a rich historical background and a captivating and culture.
+                    India is also known for its tranquility and spirituality which makes it an even better
+                    attraction.
+                    India offers many retreats that one can go to for relaxation and inner peace. People in India
+                    are also very nice and hospitable and the food there is amazing and fiery.
+                    India also has the biggest and most important temples dating back to the 15th century, which is
+                    exciting for someone interested in history and archeology </p>
+            </div>
+        </div>
+
+        <div class="row language">
+            <h2>A foreign language</h2>
+            <div class="col-12">
+                <h3>French</h3>
+                <p>French is the fifth most spoken language in the world and as someone who would like to travel the
+                    world one day, learning French would be beneficial.</p>
+            </div>
+            <div class="col-12">
+                <table>
+                    <tr>
+                        <th>English phrases</th>
+                        <th>French phrases</th>
+                    </tr>
+                    <tr>
+                        <td>Hello</td>
+                        <td>Bonjour</td>
+                    </tr>
+                    <tr>
+                        <td>Yes</td>
+                        <td>Oui</td>
+                    </tr>
+                    <tr>
+                        <td>Thank you very much</td>
+                        <td>Merci beaucoup</td>
+                    </tr>
+                    <tr>
+                        <td>Enjoy your meal</td>
+                        <td>Bon appétit</td>
+                    </tr>
+                    <tr>
+                        <td>Goodbye</td>
+                        <td>Au revoir</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="row HistoricalPlaces">
+            <h2>Historical places in Cape Town</h2>
+            <div class="col-4 city">
+                <h3>City Hall</h3>
+                <div class="col-6 text">
+                    <p>Nelson Mandela made his first speech after he was released from prison on the 11 Feb
+                        1990</p>
+                    <p>City hall was built in 1905</p>
+                    <p>Built from honey-coloured oolitic limestone imported from England</p>
+                </div>
+                <div class="col-6 pic">
+                    <img src="../basic_website/Images/CityHall2.jpg" alt="City Hall">
+                </div>
+            </div>
+            <div class="col-4 castle">
+                <h3>The Castle of Good Hope</h3>
+                <div class="col-6 text">
+                    <p>Oldest existing colonial building in South Africa</p>
+                    <p>It's position marks the original shoreline</p>
+                    <p>Built by soldiers and volunteers, slaves and Khoi undergoing punishment</p>
+                </div>
+                <div class="col-6 pic">
+                    <img src="../basic_website/Images/TheCastle1.jpg" alt="The castle of Good Hope">
+                </div>
+            </div>
+            <div class="col-4 iziko">
+                <h3>Iziko South African Museum</h3>
+                <div class="col-6 text">
+                    <p>First museum in the country</p>
+                    <p>Museum houses important African Zoology, paleontology and archeology collections</p>
+                    <p>The museum name "Iziko" is a Xhosa word meaning "hearth"</p>
+                </div>
+                <div class="col-6 pic">
+                    <img src="../basic_website/Images/Iziko.jpg" alt="Iziko Museum">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
