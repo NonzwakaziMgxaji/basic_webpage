@@ -9,11 +9,21 @@
         .header{
             padding: 1em;
             display: flex;
+            width: 50%;
+            margin: auto;
         }
 
         .headname{
             color: #522632;
-            margin-right: 20px;
+            margin: auto;
+            padding-right: 10px;
+        }
+        h1{
+            font-size: 15px;
+        }
+
+        .headpic{
+            margin: auto;
         }
 
         .headpic img{
@@ -23,6 +33,10 @@
         @media(min-width: 800px ){
             .headpic img{
                 width: 100%;
+            }
+
+            h1{
+                font-size: 30px;
             }
         }
 
@@ -58,34 +72,92 @@
         table{
             width: 100%;
         }
+/* historical place */
+.content3a, .content3b, .content3c{
+    display: flex;
+    margin-bottom: 0px;
+}
 
-        .content3a, .content3b, .content3c{
-            display: flex;
-            margin-bottom: 20px;
-        }
+.fact1, .fact3, .image2{
+    margin-right: 10px;
+}
 
-        .fact1, .fact3, .image2{
-            margin-right: 10px;
-        }
+.image1, .image3{
+    margin-top: 50px;
+}
 
-        .image1, .image2, .image3{
-            margin-top: 50px;
-        }
+.image2{
+    margin-top: 20px;
+}
 
-        @media(min-width:800px){
-            .image2{
-                order:2;
-            }
+.content3 h3{
+    font-size: 0.9em;
+    text-decoration: underline;
+}
 
-            .content3{
-                display:flex;
-            }
+.content3a, .content3b, .content3c{
+    width: 100%;
+}
 
-            .content3a, .content3b, .content3c{
-                margin-right: 20px;
-            }
+.fact1, .fact2, .fact3, .image1, .image2, .image3{
+    width: 46%;
+}
 
-            .image1, .image2, .image3{
-                margin-top: 20px;
-            }
-        }
+.content3 img{
+    width:100%;
+}
+
+.content3 p{
+    width: 100%;
+}
+
+.fact{
+    padding-top: 34px;
+}
+
+@media(min-width: 400px) and (max-width: 799px){
+    .content3 img{
+        width:60%;
+    }
+}
+
+@media(min-width:800px){
+    .image2{
+        order:2;
+    }
+
+    .content3{
+        display:flex;
+    }
+
+    .content3a, .content3b, .content3c{
+        margin-right: 20px;
+        width: 33.33%;
+    }
+
+    .image1, .image2, .image3{
+        margin-top: 55px;
+    }
+
+    .content3 p{
+        line-height: 1.5em;
+    }
+
+    .fact1, .fact2, .fact3, .image1, .image2, .image3{
+        width: 50%;
+    }
+
+    .content3 img{
+        width:100%;
+    }
+
+    .fact2{
+        margin-right: 10px;
+        margin-left: -27px;
+        margin-top: 33px;
+    }
+
+    .Cast h3{
+        padding-left: 40%;
+    }
+}

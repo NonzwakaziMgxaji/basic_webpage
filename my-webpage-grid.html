@@ -36,22 +36,12 @@
         }
 
         .header {
-            display: flex;
             padding-top: 30px;
         }
 
-        .header h1 {
-            font-size: 1.8rem;
-        }
-
-        .header .pic img {
-            /* max-width: 130px; */
-            width: 60%;
-        }
 
         .header.name {
             margin-right: 30px;
-            width: 100%;
         }
 
         .india img {
@@ -71,34 +61,56 @@
             border: 1px solid black;
             border-collapse: collapse;
         }
+/********************historical***************************/
+        .castle .col-6{
+            float:right;
+        }
+
+        @media only screen and (min-width: 45em){
+            .castle .col-6{
+                float: left;
+            }
+        }
 
         .city .text {
             width: 100%;
         }
 
+        .city .text p{
+            line-height: 1.2;
+        }
+
         .city .pic img {
-            margin-top: 30px;
+            margin-top: 5px;
             width: 100%;
+            height: 100%;
         }
 
         .castle .text {
             width: 100%;
         }
 
+        .castle .text p{
+            line-height: 1.4;
+        }
+
         .castle .pic img {
-            margin-top: 30px;
+            margin-top: 5px;
             width: 100%;
         }
 
-        .iziko .text {
+        .iziko .text{
             width: 100%;
+        }
+
+        .iziko .text p{
+            line-height: 1.1;
         }
 
         .iziko .pic img {
-            margin-top: 30px;
+            margin-top: 5px;
             width: 100%;
         }
-
         .HistoricalPlaces .col-6 {
             width: 46%;
         }
@@ -112,11 +124,12 @@
 <body>
     <div class="container">
         <div class="row header">
-            <div class="col-6-sm name">
-                <h1>NZWAKIE MGXAJI</h1>
+            <div class="col-6 name">
+                <h1>NONZWAKAZI</h1>
+                <h1>MGXAJI</h1>
             </div>
 
-            <div class="col-6-sm pic">
+            <div class="col-6 pic">
                 <img src="./Images/TableMountain.jpg" alt="Table Mountain">
             </div>
         </div>
@@ -192,7 +205,7 @@
                 <h3>The Castle of Good Hope</h3>
                 <div class="col-6 text">
                     <p>Oldest existing colonial building in South Africa</p>
-                    <p>It's position marks the original shoreline</p>
+                    <p>Position marks the original shoreline</p>
                     <p>Built by soldiers and volunteers, slaves and Khoi undergoing punishment</p>
                 </div>
                 <div class="col-6 pic">
